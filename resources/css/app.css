@@ -1,7 +1,13 @@
-@tailwind base;
-@tailwind components;
-<<<<<<< HEAD
-@tailwind utilities;
-=======
-@tailwind utilities;
->>>>>>> 762df125cc0ca7c797b73ddb8f3d706bd564df41
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #31487A 0%, #192338 100%);
+    min-height: 100vh;
+    color: white;
+}

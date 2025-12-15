@@ -1,0 +1,25 @@
+{
+  "framework": "laravel",
+  "php": {
+    "version": "8.2"
+  },
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_KEY": "@APP_KEY",
+    "LOG_CHANNEL": "single",
+    "DB_CONNECTION": "mysql"
+  },
+  "builds": [
+    {
+      "src": "/",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.php"
+    }
+  ]
+}
